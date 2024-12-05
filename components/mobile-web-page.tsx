@@ -29,7 +29,7 @@ export default function MobileWebPage() {
     written: { 1: '', 2: '' }
   })
   const [isTableExpanded, setIsTableExpanded] = useState(false)
-  const [daysLeft, setDaysLeft] = useState(0)
+  const [daysLeft, setDaysLeft] = useState<number | string>(0);
   const [selectedSubject, setSelectedSubject] = useState<string | null>(null)
   const [selectedExam, setSelectedExam] = useState<string | null>(null)
   const [scoreMessage, setScoreMessage] = useState<string | null>(null)
@@ -218,7 +218,7 @@ export default function MobileWebPage() {
 
     let totalScore = 0;
     let hasError = false;
-    let newErrors = { performance: {}, written: {} };
+    const newErrors = { performance: {}, written: {} };
 
     // Sum up performance assessment scores
     subject.performanceAssessments.forEach((assessment, index) => {
