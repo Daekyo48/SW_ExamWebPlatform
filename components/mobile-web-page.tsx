@@ -404,7 +404,7 @@ export default function MobileWebPage() {
                     className="w-full text-xs text-gray-800 border-black" 
                   />
                   {errors.category1 && <p className="text-red-500 text-xs mt-1">{errors.category1}</p>}
-                  <p className="text-xs text-gray-500 whitespace-nowrap overflow-hidden text-ellipsis">불확실한 답안은 숫자 '0'으로 입력해주세요</p>
+                  <p className="text-xs text-gray-500 whitespace-nowrap overflow-hidden text-ellipsis">불확실한 답안은 숫자 &apos;0&apos;으로 입력해주세요</p>
                   <button 
                     onClick={calculateScore}
                     className="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition-colors"
