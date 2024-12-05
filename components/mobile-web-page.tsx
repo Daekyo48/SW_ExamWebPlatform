@@ -45,14 +45,14 @@ export default function MobileWebPage() {
 
   const subjectsInfo: SubjectInfo[] = [
     { name: "독서", ratio: "지필평가 60% | 수행평가 40%", hasFirstExam: true, performanceAssessments: ["독서과정 (25점)", "독후활동(논술) (10점)", "독후활동(구술) (5점)"], firstExamAnswers: "532441422315351441135223", firstExamScores: [4.1, 4.1, 3.9, 4.5, 3.9, 4.2, 4.3, 3.9, 4.1, 4.1, 4.5, 4.2, 4.3, 4.2, 4.2, 4.5, 3.9, 3.9, 4.1, 3.9, 4.1, 4.5, 4.3, 4.3], maxScore: 100, performanceMaxScores: [25, 10, 5] },
-    { name: "수학Ⅱ", ratio: "지필평가 60% | 수행평가 40%", hasFirstExam: true, performanceAssessments: ["극한과 연속 암호 만들기 (13점)", "나의 인생 그래프 그리기 (15점)", "포트폴리오^? (12점)"], firstExamAnswers: "312551324454321341", firstExamScores: [4.2, 4.2, 4.4, 4.4, 4.6, 4.6, 4.8, 4.8, 5, 5, 5.2, 5.2, 5.4, 5.4, 5.6, 5.6, 5.8, 5.8], maxScore: 90, performanceMaxScores: [13, 15, 12] },
+    { name: "수학Ⅱ", ratio: "지필평가 60% | 수행평가 40%", hasFirstExam: true, performanceAssessments: ["극한과 연속 암호 만들기 (13점)", "나의 인생 그래프 그리기 (15점)", "포트폴리오 (12점)"], firstExamAnswers: "312551324454321341", firstExamScores: [4.2, 4.2, 4.4, 4.4, 4.6, 4.6, 4.8, 4.8, 5, 5, 5.2, 5.2, 5.4, 5.4, 5.6, 5.6, 5.8, 5.8], maxScore: 90, performanceMaxScores: [13, 15, 12] },
     { name: "영어Ⅱ", ratio: "지필평가 60% | 수행평가 40%", hasFirstExam: true, performanceAssessments: ["나의 행복 글쓰기 (25점)", "공동체의 행복 증진 방안 말하기 (15점)"], firstExamAnswers: "5441432421135525235231", firstExamScores: [4.2, 4.4, 4.7, 4.1, 4.7, 4.1, 4.4, 5.1, 4.9, 4.9, 4.4, 4.4, 4.9, 4.4, 5.1, 4.1, 4.9, 4.4, 4.7, 4.1, 4.4, 4.7], maxScore: 100, performanceMaxScores: [25, 15, 0] },
     { name: "정치와 법", ratio: "지필평가 60% | 수행평가 40%", hasFirstExam: true, performanceAssessments: ["정치 참여 방안 제시하기 (20점)", "국제 문제 해결할 수 있는 국제 기구 만들기 (20점)"], firstExamAnswers: "1422532235343352314154", firstExamScores: [4.7, 5.6, 4.5, 3.8, 4.3, 5.5, 5, 3.5, 4.2, 5.2, 4.1, 5.4, 5.1, 3.7, 4.8, 4.6, 3.9, 3.5, 5.3, 4.9, 4.4, 4], maxScore: 100, performanceMaxScores: [20, 20, 0] },
     { name: "사회·문화", ratio: "지필평가 60% | 수행평가 40%", hasFirstExam: true, performanceAssessments: ["사회 변동 가상 신문 제작 (20점)", "사회 불평등 논술 (20점)"], firstExamAnswers: "43134121532435542425", firstExamScores: [4.6, 4.5, 4.7, 5.6, 4.8, 4.9, 5.3, 4.4, 4.9, 5.1, 4.8, 5.5, 5.1, 5.2, 5.3, 4.9, 5.4, 4.7, 4.6, 5.7], maxScore: 100, performanceMaxScores: [20, 20] },
     { name: "생활과 윤리", ratio: "지필평가 40% | 수행평가 60%", hasFirstExam: false, performanceAssessments: ["혐오 표현 규제 (20점)", "환경 윤리 논술^? (20점)", "카드 뉴스 제작 (20점)"], firstExamAnswers: "", firstExamScores: [], maxScore: 100, performanceMaxScores: [20, 20, 20] },
     { name: "화학Ⅰ", ratio: "지필평가 40% | 수행평가 60%", hasFirstExam: true, performanceAssessments: ["자료를 통한 원소의 주기성 찾기 (20점)", "분자의 구조 (20점)", "산과 염기 및 산화 환원 (20점)"], firstExamAnswers: "5444145344153224125533124", firstExamScores: [2.8, 4.5, 4.7, 4.4, 3.3, 3.4, 3.8, 3, 3.5, 3.9, 3.7, 4.6, 4, 4.9, 2.9, 3.1, 3.6, 4.1, 4.2, 4.3, 3.2, 4.8, 5, 5.1, 5.2], maxScore: 100, performanceMaxScores: [20, 20, 20] },
-    { name: "생명과학Ⅰ", ratio: "지필평가 50% | 수행평가 50%", hasFirstExam: true, performanceAssessments: ["유전 해석하기 (20점)", "군집 분석 (20점)", "포트폴리오^? (10점)"], firstExamAnswers: "115423532442135354", firstExamScores: [3.7, 3.8, 4.1, 4.1, 4.6, 3.8, 3.9, 4.8, 5, 5.1, 5.2, 3.8, 4.4, 4.2, 3.8, 4.9, 5.3, 5.5], maxScore: 80, performanceMaxScores: [20, 20, 10] },
-    { name: "지구과학Ⅰ", ratio: "지필평가 50% | 수행평가 50%", hasFirstExam: true, performanceAssessments: ["태풍의 일생 논술^? (20점)", "지구과학 탐구 보고서 (20점)", "포트폴리오 (10점)^?"], firstExamAnswers: "23332352451114411422534", firstExamScores: [3.7, 4.7, 4.3, 3.7, 3.7, 4.7, 4.3, 4.3, 4.7, 4.3, 4.3, 5, 3.7, 4.3, 4.7, 3.7, 4.3, 4.7, 4.3, 5, 4.3, 5, 4.3, 4.3, 5], maxScore: 100, performanceMaxScores: [20, 20, 10] },
+    { name: "생명과학Ⅰ", ratio: "지필평가 50% | 수행평가 50%", hasFirstExam: true, performanceAssessments: ["유전 해석하기 (20점)", "군집 분석 (20점)", "포트폴리오 (10점)"], firstExamAnswers: "115423532442135354", firstExamScores: [3.7, 3.8, 4.1, 4.1, 4.6, 3.8, 3.9, 4.8, 5, 5.1, 5.2, 3.8, 4.4, 4.2, 3.8, 4.9, 5.3, 5.5], maxScore: 80, performanceMaxScores: [20, 20, 10] },
+    { name: "지구과학Ⅰ", ratio: "지필평가 50% | 수행평가 50%", hasFirstExam: true, performanceAssessments: ["태풍의 일생 논술^? (20점)", "지구과학 탐구 보고서 (20점)", "포트폴리오 (10점)"], firstExamAnswers: "23332352451114411422534", firstExamScores: [3.7, 4.7, 4.3, 3.7, 3.7, 4.7, 4.3, 4.3, 4.7, 4.3, 4.3, 5, 3.7, 4.3, 4.7, 3.7, 4.3, 4.7, 4.3, 5, 4.3, 5, 4.3, 4.3, 5], maxScore: 100, performanceMaxScores: [20, 20, 10] },
     { name: "일본어Ⅰ", ratio: "지필평가 40% | 수행평가 60%", hasFirstExam: false, performanceAssessments: ["일상생활표현 말하기 (20점)", "일본문화 주제탐구 발표 (25점)", "일본어 문장쓰기 (15점)"], firstExamAnswers: "", firstExamScores: [], maxScore: 100, performanceMaxScores: [20, 25, 15] },
     { name: "중국어Ⅰ", ratio: "지필평가 40% | 수행평가 60%", hasFirstExam: false, performanceAssessments: ["음식 주문하기 (20점)", "듣고 반응하기 (20점)", "그림 보고 말하기 (20점)"], firstExamAnswers: "", firstExamScores: [], maxScore: 100, performanceMaxScores: [20, 20, 20] }
   ]
@@ -314,7 +314,7 @@ export default function MobileWebPage() {
           </svg>
         </div>
       ) : (
-        <main className="w-full max-w-[375px] px-4 py-6 bg-white shadow-lg">
+        <main className="w-full max-w-[400px] px-4 py-6 bg-white shadow-lg">
           <h1 className="text-xl font-bold text-center mb-6 py-2 border border-black rounded-lg shadow-sm">
             지필평가 정보 플랫폼
           </h1>
