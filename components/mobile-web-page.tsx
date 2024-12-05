@@ -17,16 +17,22 @@ type SubjectInfo = {
   performanceMaxScores: number[];
 }
 
+type Errors = {
+  category1: string;
+  performance: { [key: string]: string };
+  written: { [key: string]: string };
+}
+
 export default function MobileWebPage() {
   const [inputs, setInputs] = useState({
     category1: '',
     performance1: '', performance2: '', performance3: '',
     written1: '', written2: ''
   })
-  const [errors, setErrors] = useState({
+  const [errors, setErrors] = useState<Errors>({
     category1: '',
-    performance: { 1: '', 2: '', 3: '' },
-    written: { 1: '', 2: '' }
+    performance: {},
+    written: {}
   })
   const [isTableExpanded, setIsTableExpanded] = useState(false)
   const [daysLeft, setDaysLeft] = useState<number | string>(0);
@@ -188,7 +194,7 @@ export default function MobileWebPage() {
   const handleSubjectChange = (value: string) => {
     setSelectedSubject(value);
     setScoreMessage(null);
-    setErrors(prev => ({ ...prev, category1: '', performance: { 1: '', 2: '', 3: '' }, written: { 1: '', 2: '' } }));
+    setErrors(prev => ({ ...prev, category1: '', performance: {}, written: {} }));
     setInputs(prev => ({ ...prev, category1: '', performance1: '', performance2: '', performance3: '', written1: '', written2: '' }));
     setIncorrectQuestions([]);
     setRawScoreMessage(null);
@@ -197,7 +203,7 @@ export default function MobileWebPage() {
   const handleExamChange = (value: string) => {
     setSelectedExam(value);
     setScoreMessage(null);
-    setErrors(prev => ({ ...prev, category1: '', performance: { 1: '', 2: '', 3: '' }, written: { 1: '', 2: '' } }));
+    setErrors(prev => ({ ...prev, category1: '', performance: {}, written: {} }));
     setIncorrectQuestions([]);
     setRawScoreMessage(null);
   };
@@ -218,17 +224,17 @@ export default function MobileWebPage() {
 
     let totalScore = 0;
     let hasError = false;
-    const newErrors = { performance: {}, written: {} };
+    let newErrors: Errors = { category1: '', performance: {}, written: {} };
 
     // Sum up performance assessment scores
     subject.performanceAssessments.forEach((assessment, index) => {
       const score = parseFloat(inputs[`performance${index + 1}` as keyof typeof inputs]);
       const maxScore = subject.performanceMaxScores[index];
       if (isNaN(score)) {
-        newErrors.performance[index + 1] = '점수를 입력해주세요';
+        newErrors.performance[`${index + 1}`] = '점수를 입력해주세요';
         hasError = true;
       } else if (score > maxScore) {
-        newErrors.performance[index + 1] = `해당 수행평가는 ${maxScore}점을 초과할 수 없습니다`;
+        newErrors.performance[`${index + 1}`] = `해당 수행평가는 ${maxScore}점을 초과할 수 없습니다`;
         hasError = true;
       } else {
         totalScore += score;
@@ -258,7 +264,11 @@ export default function MobileWebPage() {
     }
 
     if (hasError) {
-      setErrors(prev => ({ ...prev, performance: { ...prev.performance, ...newErrors.performance }, written: { ...prev.written, ...newErrors.written } }));
+      setErrors(prev => ({
+        ...prev,
+        performance: { ...prev.performance, ...newErrors.performance },
+        written: { ...prev.written, ...newErrors.written }
+      }));
       setRawScoreMessage(null);
       return;
     }
@@ -291,7 +301,7 @@ export default function MobileWebPage() {
     const grade = '정보없음';
 
     setRawScoreMessage(`원점수: ${roundedScore}점 (${roundedTotalScore}점)\n등급: ${grade}`);
-    setErrors(prev => ({ ...prev, performance: { 1: '', 2: '', 3: '' }, written: { 1: '', 2: '' } }));
+    setErrors(prev => ({ ...prev, performance: {}, written: {} }));
   };
 
   return (
