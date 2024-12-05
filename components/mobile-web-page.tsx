@@ -305,7 +305,7 @@ export default function MobileWebPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#1C1C1C] text-gray-800 flex justify-center">
+    <div className="min-h-screen bg-[#FFFFFF] text-gray-800 flex justify-center">
       {isLoading ? (
         <div className="flex items-center justify-center w-full h-screen bg-white" aria-live="polite" aria-busy="true">
           <svg className="animate-spin h-10 w-10 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
@@ -314,7 +314,7 @@ export default function MobileWebPage() {
           </svg>
         </div>
       ) : (
-        <main className="w-full max-w-[400px] px-4 py-6 bg-white shadow-lg">
+        <main className="w-full max-w-[375px] px-4 py-6 bg-white shadow-lg">
           <h1 className="text-xl font-bold text-center mb-6 py-2 border border-black rounded-lg shadow-sm">
             지필평가 정보 플랫폼
           </h1>
