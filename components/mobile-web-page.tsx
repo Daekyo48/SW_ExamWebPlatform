@@ -224,7 +224,7 @@ export default function MobileWebPage() {
 
     let totalScore = 0;
     let hasError = false;
-    let newErrors: Errors = { category1: '', performance: {}, written: {} };
+    const newErrors: Errors = { category1: '', performance: {}, written: {} };
 
     // Sum up performance assessment scores
     subject.performanceAssessments.forEach((assessment, index) => {
