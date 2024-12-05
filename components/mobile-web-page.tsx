@@ -344,7 +344,7 @@ export default function MobileWebPage() {
                     {dates.map((dateInfo, index) => (
                       <React.Fragment key={`row-${index}`}>
                         <tr>
-                          <td className="border border-gray-300 p-2 text-left font-semibold" rowSpan={dateInfo.subjects.length + 1}>
+                          <td className="border border-gray-300 p-2 text-center font-semibold" rowSpan={dateInfo.subjects.length + 1}>
                             {dateInfo.date}
                           </td>
                         </tr>
