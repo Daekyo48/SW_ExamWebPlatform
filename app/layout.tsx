@@ -27,7 +27,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body className="font-sans">{children}</body>
+      <body className="font-sans">
+        <div style={{ whiteSpace: "pre-line" }}>
+          {description}
+        </div>
+        {children}
+      </body>
       <SpeedInsights />
     </html>
   );
