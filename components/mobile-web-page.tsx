@@ -314,10 +314,11 @@ export default function MobileWebPage() {
           </svg>
         </div>
       ) : (
-        <main className="w-full max-w-[375px] px-20 py-6 bg-white shadow-lg mx-auto">
-          <h1 className="text-xl font-bold text-center mb-6 py-2 border border-black rounded-lg shadow-sm">
-            지필평가 일정 플랫폼
-          </h1>
+        <main className="w-full max-w-[375px] px-4 py-6 bg-white shadow-lg mx-auto relative overflow-x-hidden">
+          <div className="absolute inset-0 bg-white"></div>
+            <h1 className="text-xl font-bold text-center mb-6 py-2 border border-black rounded-lg shadow-sm">
+              지필평가 일정 플랫폼
+            </h1>
           
           <div className="mb-6 text-center">
             <div className="text-3xl font-bold text-primary">
