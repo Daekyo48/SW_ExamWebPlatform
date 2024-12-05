@@ -316,7 +316,7 @@ export default function MobileWebPage() {
       ) : (
         <main className="w-full max-w-[375px] px-4 py-6 bg-white shadow-lg">
           <h1 className="text-xl font-bold text-center mb-6 py-2 border border-black rounded-lg shadow-sm">
-            2학년 지필평가 도우미
+            지필평가 정보 플랫폼
           </h1>
           
           <div className="mb-6 text-center">
@@ -520,7 +520,7 @@ export default function MobileWebPage() {
           입력된 정보는 이외의 용도로 일절 사용되지 않습니다
         </p>
         <p className="text-xs text-gray-600 text-center">
-          최종 수정일: 2024-11-26
+          최종 수정일: 2024-12-05
         </p>
         </main>
       )}
