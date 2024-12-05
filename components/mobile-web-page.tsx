@@ -314,7 +314,7 @@ export default function MobileWebPage() {
           </svg>
         </div>
       ) : (
-        <main className="w-full max-w-[500px] px-4 py-6 bg-white shadow-lg mx-auto">
+        <main className="w-full max-w-[400px] px-4 py-6 bg-white shadow-lg mx-auto">
           <h1 className="text-xl font-bold text-center mb-6 py-2 border border-black rounded-lg shadow-sm">
             지필평가 일정 플랫폼
           </h1>
