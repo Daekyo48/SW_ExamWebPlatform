@@ -16,8 +16,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "지필평가 정보 플랫폼",
-  description: "-",
+  title: "지필평가 일정 플랫폼",
+  description: "지필평가 일정 안내 및 점수 계산을 지원합니다.",
 };
 
 export default function RootLayout({
