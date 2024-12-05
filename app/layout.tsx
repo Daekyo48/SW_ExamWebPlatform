@@ -25,18 +25,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const description = metadata.description; 
-  
   return (
     <html lang="ko" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body className="font-sans">
-        <div style={{ whiteSpace: "pre-line" }}>
-          {description}
-        </div>
-        {children}
-      </body>
+      <body className="font-sans">{children}</body>
       <SpeedInsights />
     </html>
   );
 }
-
