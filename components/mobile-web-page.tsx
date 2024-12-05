@@ -324,7 +324,7 @@ export default function MobileWebPage() {
               {daysLeft === 'Day' ? 'D-Day' : `D-${daysLeft}`}
             </div>
             <div className="text-sm text-gray-600">
-              (2차 지필평가까지)
+              (지필평가까지)
             </div>
           </div>
 
