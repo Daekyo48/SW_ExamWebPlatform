@@ -46,7 +46,7 @@ export default function MobileWebPage() {
   const [incorrectQuestions, setIncorrectQuestions] = useState<number[]>([]);
   const [rawScoreMessage, setRawScoreMessage] = useState<string | null>(null);
 
-  const subjectsInfo = useMemo(() => [
+  const subjectsInfo = useMemo<SubjectInfo[]>(() => [
     { 
       name: "독서", 
       ratio: "지필평가 60% | 수행평가 40%", 
