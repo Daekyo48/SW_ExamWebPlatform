@@ -4,7 +4,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { ChevronDown, ChevronUp } from 'lucide-react'
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback, useMemo } from 'react';
 
 type SubjectInfo = {
   name: string;
@@ -46,7 +46,7 @@ export default function MobileWebPage() {
   const [incorrectQuestions, setIncorrectQuestions] = useState<number[]>([]);
   const [rawScoreMessage, setRawScoreMessage] = useState<string | null>(null);
 
-  const subjectsInfo: SubjectInfo[] = [
+  const subjectsInfo = useMemo(() => [
     { 
       name: "독서", 
       ratio: "지필평가 60% | 수행평가 40%", 
@@ -190,7 +190,7 @@ export default function MobileWebPage() {
       secondExamScores: [], 
       secondExamMaxScore: 0 
     }
-  ]
+  ], []);
 
   useEffect(() => {
     const calculateDaysLeft = () => {
@@ -252,7 +252,7 @@ export default function MobileWebPage() {
     }
   }
 
-  const calculateScore = () => {
+  const calculateScore = useCallback(() => {
     if (!selectedSubject || !selectedExam) {
       setErrors(prev => ({ ...prev, category1: '과목과 평가를 선택해주세요' }));
       setScoreMessage(null);
@@ -317,36 +317,26 @@ export default function MobileWebPage() {
     
     setErrors(prev => ({ ...prev, category1: '' }));
     setIncorrectQuestions(incorrectQuestionsArray);
-  }
+  }, [selectedSubject, selectedExam, inputs.category1, subjectsInfo]);
 
-  const examTypes = ["1차 지필평가", "2차 지필평가"]
-
-  const dates = [
-  { date: "12/9 (월)", subjects: ["(자습)", "영어Ⅱ[03]", "세계사[05]"] },
-  { date: "12/10 (화)", subjects: ["(자습)", "물리학Ⅰ[09]", "생활과 윤리[08]"] },
-  { date: "12/11 (수)", subjects: ["수학Ⅱ[02]", "한국지리[04]", "화학Ⅰ[10]"] },
-  { date: "12/12 (목)", subjects: ["독서[01]", "정치와 법[06]", "지구과학Ⅰ[12]"] },
-  { date: "12/13 (금)", subjects: ["일본어Ⅰ[17] / 중국어Ⅰ[18]", "사회·문화[07]", "생명과학Ⅰ[11]"] }
-];
-
-  const handleSubjectChange = (value: string) => {
+  const handleSubjectChange = useCallback((value: string) => {
     setSelectedSubject(value);
     setScoreMessage(null);
     setErrors(prev => ({ ...prev, category1: '', performance: {}, written: {} }));
     setInputs(prev => ({ ...prev, category1: '', performance1: '', performance2: '', performance3: '', written1: '', written2: '' }));
     setIncorrectQuestions([]);
     setRawScoreMessage(null);
-  };
+  }, []);
 
-  const handleExamChange = (value: string) => {
+  const handleExamChange = useCallback((value: string) => {
     setSelectedExam(value);
     setScoreMessage(null);
     setErrors(prev => ({ ...prev, category1: '', performance: {}, written: {} }));
     setIncorrectQuestions([]);
     setRawScoreMessage(null);
-  };
+  }, []);
 
-  const calculateRawScore = () => {
+  const calculateRawScore = useCallback(() => {
     if (!selectedSubject) {
       setErrors(prev => ({ ...prev, performance: { 1: '과목을 선택해주세요', 2: '', 3: '' }, written: { 1: '', 2: '' } }));
       setRawScoreMessage(null);
@@ -438,7 +428,17 @@ export default function MobileWebPage() {
 
     setRawScoreMessage(`원점수: ${roundedScore}점 (${roundedTotalScore}점)\n등급: ${grade}`);
     setErrors(prev => ({ ...prev, performance: {}, written: {} }));
-  };
+  }, [selectedSubject, inputs, subjectsInfo]);
+
+  const examTypes = ["1차 지필평가", "2차 지필평가"]
+
+  const dates = [
+  { date: "12/9 (월)", subjects: ["(자습)", "영어Ⅱ[03]", "세계사[05]"] },
+  { date: "12/10 (화)", subjects: ["(자습)", "물리학Ⅰ[09]", "생활과 윤리[08]"] },
+  { date: "12/11 (수)", subjects: ["수학Ⅱ[02]", "한국지리[04]", "화학Ⅰ[10]"] },
+  { date: "12/12 (목)", subjects: ["독서[01]", "정치와 법[06]", "지구과학Ⅰ[12]"] },
+  { date: "12/13 (금)", subjects: ["일본어Ⅰ[17] / 중국어Ⅰ[18]", "사회·문화[07]", "생명과학Ⅰ[11]"] }
+];
 
   return (
     <div className="min-h-screen bg-[#1C1C1C] text-gray-800 flex justify-center">
