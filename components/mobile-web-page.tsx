@@ -201,7 +201,7 @@ export default function MobileWebPage() {
       const daysLeft = Math.ceil(timeDiff / (1000 * 3600 * 24))
       
       if (today >= targetDate && today <= endDate) {
-        return 'Day'
+        return 'DAY'
       } else {
         return daysLeft
       }
@@ -474,7 +474,7 @@ export default function MobileWebPage() {
               {isTableExpanded ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
             </div>
             {isTableExpanded && (
-              <div className="overflow-x-auto bg-white rounded-lg">
+              <div className="overflow-x-auto bg-white">
                 <table className="w-full text-xs border-collapse">
                   <tbody>
                     {dates.map((dateInfo, index) => (
