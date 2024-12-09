@@ -82,9 +82,9 @@ export default function MobileWebPage() {
       firstExamScores: [4.2, 4.4, 4.7, 4.1, 4.7, 4.1, 4.4, 5.1, 4.9, 4.9, 4.4, 4.4, 4.9, 4.4, 5.1, 4.1, 4.9, 4.4, 4.7, 4.1, 4.4, 4.7], 
       firstExamMaxScore: 100, 
       performanceMaxScores: [25, 15], 
-      secondExamAnswers: "", 
-      secondExamScores: [], 
-      secondExamMaxScore: 0
+      secondExamAnswers: "2155443542234112233513", 
+      secondExamScores: [4.1, 4.7, 4.4, 4.2, 4.1, 4.1, 4.1, 5.1, 4.7, 4.7, 4.4, 4.4, 4.4, 4.9, 4.9, 4.4, 4.4, 5.1, 4.9, 4.9, 4.4, 4.7], 
+      secondExamMaxScore: 100
     },
     { 
       name: "정치와 법", 
@@ -656,7 +656,7 @@ export default function MobileWebPage() {
           입력된 정보는 이외의 용도로 일절 사용되지 않습니다
         </p>
         <p className="text-xs text-gray-600 text-center">
-          최종 수정일: 2024-12-08
+          최종 수정일: 2024-12-09
         </p>
         </main>
       )}
