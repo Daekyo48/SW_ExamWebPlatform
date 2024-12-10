@@ -121,7 +121,7 @@ export default function MobileWebPage() {
       firstExamScores: [], 
       firstExamMaxScore: 0, 
       performanceMaxScores: [20, 20, 20], 
-      secondExamAnswers: "5443412123323543531521351", 
+      secondExamAnswers: "5443412123325343531521351", 
       secondExamScores: [3.2, 3.6, 3.2, 4, 3.6, 4.4, 4.6, 4, 4.2, 4.4, 4, 4.2, 3.8, 4.4, 4, 4.2, 4.2, 4.2, 4, 4.2, 3.6, 4, 4, 4, 4], 
       secondExamMaxScore: 100
     },
