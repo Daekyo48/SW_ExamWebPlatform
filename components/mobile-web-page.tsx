@@ -121,9 +121,9 @@ export default function MobileWebPage() {
       firstExamScores: [], 
       firstExamMaxScore: 0, 
       performanceMaxScores: [20, 20, 20], 
-      secondExamAnswers: "", 
-      secondExamScores: [], 
-      secondExamMaxScore: 0
+      secondExamAnswers: "5443412123325543531521351", 
+      secondExamScores: [3.2, 3.6, 3.2, 4, 3.6, 4.4, 4.6, 4, 4.2, 4.4, 4, 4.2, 3.8, 4.4, 4, 4.2, 4.2, 4.2, 4, 4.2, 3.6, 4, 4, 4, 4], 
+      secondExamMaxScore: 100
     },
     { 
       name: "화학Ⅰ", 
@@ -171,7 +171,7 @@ export default function MobileWebPage() {
       performanceAssessments: ["일상생활표현 말하기 (20점)", "일본문화 주제탐구 발표 (25점)", "일본어 문장쓰기 (15점)"], 
       firstExamAnswers: "", 
       firstExamScores: [], 
-      firstExamMaxScore: 100, 
+      firstExamMaxScore: 0, 
       performanceMaxScores: [20, 25, 15], 
       secondExamAnswers: "", 
       secondExamScores: [], 
@@ -184,7 +184,7 @@ export default function MobileWebPage() {
       performanceAssessments: ["음식 주문하기 (20점)", "듣고 반응하기 (20점)", "그림 보고 말하기 (20점)"], 
       firstExamAnswers: "", 
       firstExamScores: [], 
-      firstExamMaxScore: 100, 
+      firstExamMaxScore: 0, 
       performanceMaxScores: [20, 20, 20], 
       secondExamAnswers: "", 
       secondExamScores: [], 
@@ -656,7 +656,7 @@ export default function MobileWebPage() {
           입력된 정보는 이외의 용도로 일절 사용되지 않습니다
         </p>
         <p className="text-xs text-gray-600 text-center">
-          최종 수정일: 2024-12-09
+          최종 수정일: 2024-12-10
         </p>
         </main>
       )}
