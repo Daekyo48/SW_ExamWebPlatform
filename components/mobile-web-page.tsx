@@ -134,7 +134,7 @@ export default function MobileWebPage() {
       firstExamScores: [2.8, 4.5, 4.7, 4.4, 3.3, 3.4, 3.8, 3, 3.5, 3.9, 3.7, 4.6, 4, 4.9, 2.9, 3.1, 3.6, 4.1, 4.2, 4.3, 3.2, 4.8, 5, 5.1, 5.2], 
       firstExamMaxScore: 100, 
       performanceMaxScores: [20, 20, 20], 
-      secondExamAnswers: "3125111452342213555224345", 
+      secondExamAnswers: "312511145234221355524345", 
       secondExamScores: [3.2, 3.1, 3.3, 3.4, 3, 3.5, 3.6, 3.8, 4.5, 3.6, 4.7, 4, 4.1, 4.2, 4.4, 3.7, 4.6, 3.9, 4.9, 5.1, 5.5, 5.2, 5.4, 5.3], 
       secondExamMaxScore: 100
     },
