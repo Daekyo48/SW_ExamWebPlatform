@@ -134,14 +134,14 @@ export default function MobileWebPage() {
       firstExamScores: [2.8, 4.5, 4.7, 4.4, 3.3, 3.4, 3.8, 3, 3.5, 3.9, 3.7, 4.6, 4, 4.9, 2.9, 3.1, 3.6, 4.1, 4.2, 4.3, 3.2, 4.8, 5, 5.1, 5.2], 
       firstExamMaxScore: 100, 
       performanceMaxScores: [20, 20, 20], 
-      secondExamAnswers: "", 
-      secondExamScores: [], 
-      secondExamMaxScore: 0
+      secondExamAnswers: "3125111452342213555224345", 
+      secondExamScores: [3.2, 3.1, 3.3, 3.4, 3, 3.5, 3.6, 3.8, 4.5, 3.6, 4.7, 4, 4.1, 4.2, 4.4, 3.7, 4.6, 3.9, 4.9, 5.1, 5.5, 5.2, 5.4, 5.3], 
+      secondExamMaxScore: 100
     },
     { 
       name: "생명과학Ⅰ", 
       ratio: "지필평가 50% | 수행평가 50%", 
-      hasFirstExam: true, 
+      hasF2irstExam: true, 
       performanceAssessments: ["유전 해석하기 (20점)", "군집 분석 (20점)", "포트폴리오 (10점)"], 
       firstExamAnswers: "115423532442135354", 
       firstExamScores: [3.7, 3.8, 4.1, 4.1, 4.6, 3.8, 3.9, 4.8, 5, 5.1, 5.2, 3.8, 4.4, 4.2, 3.8, 4.9, 5.3, 5.5], 
@@ -653,10 +653,10 @@ export default function MobileWebPage() {
             </div>
           )}
         <p className="text-xs text-gray-600 text-center mt-2 mb-1">
-          입력된 정보는 이외의 용도로 일절 사용되지 않습니다
+          입력된 정보는 수집·이용되지 않습니다
         </p>
         <p className="text-xs text-gray-600 text-center">
-          최종 수정일: 2024-12-10
+          최종 수정일: 2024-12-11
         </p>
         </main>
       )}
