@@ -653,7 +653,7 @@ export default function MobileWebPage() {
             </div>
           )}
         <p className="text-xs text-gray-600 text-center mt-2 mb-1">
-          입력된 정보는 수집·이용되지 않습니다
+          입력된 정보는 이외의 용도로 수집·이용되지 않습니다
         </p>
         <p className="text-xs text-gray-600 text-center">
           최종 수정일: 2024-12-11
