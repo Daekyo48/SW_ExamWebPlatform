@@ -141,7 +141,7 @@ export default function MobileWebPage() {
     { 
       name: "생명과학Ⅰ", 
       ratio: "지필평가 50% | 수행평가 50%", 
-      hasF2irstExam: true, 
+      hasFirstExam: true, 
       performanceAssessments: ["유전 해석하기 (20점)", "군집 분석 (20점)", "포트폴리오 (10점)"], 
       firstExamAnswers: "115423532442135354", 
       firstExamScores: [3.7, 3.8, 4.1, 4.1, 4.6, 3.8, 3.9, 4.8, 5, 5.1, 5.2, 3.8, 4.4, 4.2, 3.8, 4.9, 5.3, 5.5], 
