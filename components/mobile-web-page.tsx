@@ -69,9 +69,9 @@ export default function MobileWebPage() {
       firstExamScores: [4.2, 4.2, 4.4, 4.4, 4.6, 4.6, 4.8, 4.8, 5, 5, 5.2, 5.2, 5.4, 5.4, 5.6, 5.6, 5.8, 5.8], 
       firstExamMaxScore: 90, 
       performanceMaxScores: [13, 15, 12],
-      secondExamAnswers: "",
-      secondExamScores: [],
-      secondExamMaxScore: 0
+      secondExamAnswers: "431551123254523342",
+      secondExamScores: [4.2, 4.2, 4.4, 4.4, 4.6, 4.6, 4.8, 4.8, 5, 5, 5.2, 5.2, 5.4, 5.4, 5.6, 5.6, 5.8, 5.8],
+      secondExamMaxScore: 90
     },
     { 
       name: "영어Ⅱ", 
