@@ -160,9 +160,9 @@ export default function MobileWebPage() {
       firstExamScores: [3.7, 4.7, 4.3, 3.7, 3.7, 4.7, 4.3, 4.3, 4.7, 4.3, 4.3, 5, 3.7, 4.3, 4.7, 3.7, 4.3, 4.7, 4.3, 5, 4.3, 5, 4.3, 4.3, 5], 
       firstExamMaxScore: 100, 
       performanceMaxScores: [20, 20, 10], 
-      secondExamAnswers: "", 
-      secondExamScores: [], 
-      secondExamMaxScore: 0
+      secondExamAnswers: "15412343142113553523422", 
+      secondExamScores: [4.7, 4.7, 4.3, 4.3, 4.7, 3.7, 3.7, 3.7, 4.3, 4.3, 4.3, 3.7, 4.3, 4.3, 4.7, 5, 4.7, 3.7, 4.3, 5, 4.3, 4.3, 5], 
+      secondExamMaxScore: 100
     },
     { 
       name: "일본어Ⅰ", 
