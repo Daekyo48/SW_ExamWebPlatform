@@ -56,9 +56,9 @@ export default function MobileWebPage() {
       firstExamScores: [4.1, 4.1, 3.9, 4.5, 3.9, 4.2, 4.3, 3.9, 4.1, 4.1, 4.5, 4.2, 4.3, 4.2, 4.2, 4.5, 3.9, 3.9, 4.1, 3.9, 4.1, 4.5, 4.3, 4.3], 
       firstExamMaxScore: 100, 
       performanceMaxScores: [25, 10, 5],
-      secondExamAnswers: "",
-      secondExamScores: [],
-      secondExamMaxScore: 0
+      secondExamAnswers: "315534312434152533143255",
+      secondExamScores: [4.3, 3.9, 4.2, 4.1, 4.5, 4.1, 4.5, 3.9, 4.2, 4.3, 4.1, 4.3, 4.5, 3.9, 4.2, 4.5, 4.3, 3.9, 4.1, 3.9, 4.1, 4.2],
+      secondExamMaxScore: 100
     },
     { 
       name: "수학Ⅱ", 
@@ -95,9 +95,9 @@ export default function MobileWebPage() {
       firstExamScores: [4.7, 5.6, 4.5, 3.8, 4.3, 5.5, 5, 3.5, 4.2, 5.2, 4.1, 5.4, 5.1, 3.7, 4.8, 4.6, 3.9, 3.5, 5.3, 4.9, 4.4, 4], 
       firstExamMaxScore: 100, 
       performanceMaxScores: [20, 20], 
-      secondExamAnswers: "", 
-      secondExamScores: [], 
-      secondExamMaxScore: 0
+      secondExamAnswers: "41525231144251523331", 
+      secondExamScores: [5.1, 5.6, 5, 4.8, 4.7, 4.3, 5.4, 4.9, 4.1, 4.2, 4.5, 4.4, 5.2, 4.6, 5.3, 5.5, 5.7, 5.9, 5.8, 5], 
+      secondExamMaxScore: 100
     },
     { 
       name: "사회·문화", 
