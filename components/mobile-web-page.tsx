@@ -57,7 +57,7 @@ export default function MobileWebPage() {
       firstExamMaxScore: 100, 
       performanceMaxScores: [25, 10, 5],
       secondExamAnswers: "315534312434152533143255",
-      secondExamScores: [4.3, 3.9, 4.2, 4.1, 4.5, 4.1, 4.5, 3.9, 4.2, 4.3, 4.1, 4.3, 4.5, 3.9, 4.2, 4.5, 4.3, 3.9, 4.1, 3.9, 4.1, 4.2],
+      secondExamScores: [4.3, 3.9, 4.2, 4.1, 4.5, 4.1, 4.5, 3.9, 4.1, 3.9, 4.2, 4.3, 4.1, 4.3, 4.5, 3.9, 4.2, 4.5, 4.3, 3.9, 4.1, 3.9, 4.1, 4.2],
       secondExamMaxScore: 100
     },
     { 
