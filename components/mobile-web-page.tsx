@@ -195,8 +195,8 @@ export default function MobileWebPage() {
   useEffect(() => {
     const calculateDaysLeft = () => {
       const today = new Date()
-      const targetDate = new Date(2024, 12, 9)
-      const endDate = new Date(2024, 12, 14)
+      const targetDate = new Date(2024, 11, 9)
+      const endDate = new Date(2024, 11, 14)
       const timeDiff = targetDate.getTime() - today.getTime()
       const daysLeft = Math.ceil(timeDiff / (1000 * 3600 * 24))
       
