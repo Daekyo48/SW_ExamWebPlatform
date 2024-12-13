@@ -108,9 +108,9 @@ export default function MobileWebPage() {
       firstExamScores: [4.6, 4.5, 4.7, 5.6, 4.8, 4.9, 5.3, 4.4, 4.9, 5.1, 4.8, 5.5, 5.1, 5.2, 5.3, 4.9, 5.4, 4.7, 4.6, 5.7], 
       firstExamMaxScore: 100, 
       performanceMaxScores: [20, 20], 
-      secondExamAnswers: "", 
-      secondExamScores: [], 
-      secondExamMaxScore: 0
+      secondExamAnswers: "12125334541433152152", 
+      secondExamScores: [4.6, 4.7, 4.9, 5.3, 4.6, 4.8, 5.3, 4.8, 4.9, 4.5, 5.4, 4.9, 5.1, 5.7, 5.2, 4.4, 5.5, 5.1, 5.6, 4.7], 
+      secondExamMaxScore: 100
     },
     { 
       name: "생활과 윤리", 
@@ -147,9 +147,9 @@ export default function MobileWebPage() {
       firstExamScores: [3.7, 3.8, 4.1, 4.1, 4.6, 3.8, 3.9, 4.8, 5, 5.1, 5.2, 3.8, 4.4, 4.2, 3.8, 4.9, 5.3, 5.5], 
       firstExamMaxScore: 80, 
       performanceMaxScores: [20, 20, 10], 
-      secondExamAnswers: "", 
-      secondExamScores: [], 
-      secondExamMaxScore: 0
+      secondExamAnswers: "21554431112235354432", 
+      secondExamScores: [4.3, 4.5, 4.4, 5.1, 5.3, 5.6, 5.6, 5.7, 4.5, 4.2, 4.6, 5, 5.3, 5.4, 4.3, 4.8, 5.5, 5.4, 5.2, 5.3], 
+      secondExamMaxScore: 100
     },
     { 
       name: "지구과학Ⅰ", 
@@ -173,9 +173,9 @@ export default function MobileWebPage() {
       firstExamScores: [], 
       firstExamMaxScore: 0, 
       performanceMaxScores: [20, 25, 15], 
-      secondExamAnswers: "", 
-      secondExamScores: [], 
-      secondExamMaxScore: 0
+      secondExamAnswers: "4154434235145135324251523", 
+      secondExamScores: [4, 4, 3.8, 3.8, 3.5, 4, 3.9, 3.6, 4, 4.8, 3.6, 3.6, 3.8, 3.8, 4.4, 4.6, 3.4, 5, 5, 3.8, 4, 4.2, 3.8, 3.6, 4], 
+      secondExamMaxScore: 100
     },
     { 
       name: "중국어Ⅰ", 
@@ -186,9 +186,9 @@ export default function MobileWebPage() {
       firstExamScores: [], 
       firstExamMaxScore: 0, 
       performanceMaxScores: [20, 20, 20], 
-      secondExamAnswers: "", 
-      secondExamScores: [], 
-      secondExamMaxScore: 0 
+      secondExamAnswers: "52515532434141141334352322", 
+      secondExamScores: [3.3, 3.7, 3.9, 3.5, 4.3, 3.6, 3.4, 4.4, 4.2, 3.6, 3.4, 3.8, 4.3, 3.8, 4.3, 3.9, 3.9, 4.1, 3.5, 3.7, 3.7, 3.8, 4.1, 4.4, 4.1, 3.3], 
+      secondExamMaxScore: 100 
     }
   ], []);
 
