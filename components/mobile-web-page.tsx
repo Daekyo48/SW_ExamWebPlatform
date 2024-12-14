@@ -196,7 +196,7 @@ export default function MobileWebPage() {
     const calculateDaysLeft = () => {
       const today = new Date()
       const targetDate = new Date(2024, 11, 24)
-      const endDate = new Date(2024, 11, 24)
+      const endDate = new Date(2024, 11, 25)
       const timeDiff = targetDate.getTime() - today.getTime()
       const daysLeft = Math.ceil(timeDiff / (1000 * 3600 * 24))
       
