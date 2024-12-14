@@ -195,8 +195,8 @@ export default function MobileWebPage() {
   useEffect(() => {
     const calculateDaysLeft = () => {
       const today = new Date()
-      const targetDate = new Date(2024, 11, 9)
-      const endDate = new Date(2024, 11, 14)
+      const targetDate = new Date(2024, 11, 24)
+      const endDate = new Date(2024, 11, 24)
       const timeDiff = targetDate.getTime() - today.getTime()
       const daysLeft = Math.ceil(timeDiff / (1000 * 3600 * 24))
       
@@ -460,7 +460,7 @@ export default function MobileWebPage() {
               {daysLeft === 'Day' ? 'D-Day' : `D-${daysLeft}`}
             </div>
             <div className="text-sm text-gray-600">
-              (지필평가까지)
+              (솔빛제까지)
             </div>
           </div>
 
